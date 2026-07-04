@@ -1,0 +1,52 @@
+.outfit-upload {
+  margin-bottom: 16px;
+}
+
+.upload-row {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  align-items: center;
+}
+
+.upload-name {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 8px;
+  border: 2px solid var(--dark);
+  background: var(--bg-cream);
+  font-family: inherit;
+  font-size: 6px;
+  color: var(--dark);
+}
+
+.upload-name::placeholder {
+  color: var(--dark-muted);
+}
+
+.upload-btn {
+  padding: 10px 12px;
+  background: var(--green);
+  color: var(--white);
+  border: 2px solid var(--dark);
+  box-shadow: 2px 2px 0 var(--dark);
+  font-size: 6px;
+  white-space: nowrap;
+}
+
+.upload-btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.upload-btn:active:not(:disabled) {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 var(--dark);
+}
+
+.upload-hint {
+  margin-top: 8px;
+  font-size: 5px;
+  line-height: 1.6;
+  color: var(--dark-muted);
+}

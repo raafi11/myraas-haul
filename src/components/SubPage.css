@@ -1,0 +1,50 @@
+.sub-page {
+  padding-top: 8px;
+}
+
+.sub-title {
+  display: inline-block;
+  padding: 10px 16px;
+  margin-bottom: 20px;
+}
+
+.sub-title h2 {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.sub-empty {
+  font-size: 7px;
+  line-height: 2;
+  color: var(--dark-muted);
+  text-align: center;
+  padding: 40px 16px;
+}
+
+.sub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.sub-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.sub-thumb {
+  width: 100%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 0 var(--dark);
+}
+
+.sub-card span {
+  font-size: 6px;
+  letter-spacing: 0.3px;
+}

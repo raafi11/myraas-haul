@@ -1,0 +1,52 @@
+.try-section {
+  margin-bottom: 20px;
+}
+
+.try-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 16px;
+  background: var(--green);
+  color: var(--white);
+  font-size: 11px;
+  letter-spacing: 1px;
+  transition: transform 0.1s;
+}
+
+.try-btn:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--dark);
+}
+
+.try-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.try-arrow {
+  font-size: 10px;
+}
+
+.press-start {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.press-start .line {
+  flex: 1;
+  height: 2px;
+  background: var(--dark-muted);
+  opacity: 0.3;
+}
+
+.press-start .text {
+  font-size: 6px;
+  letter-spacing: 1px;
+  color: var(--dark-muted);
+  white-space: nowrap;
+}

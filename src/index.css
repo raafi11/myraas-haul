@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-cream: #e2e4d1;
+  --bg-panel: #d8dac8;
+  --bg-slot: #c8cab8;
+  --dark: #2a2d1f;
+  --dark-muted: #3a3d2f;
+  --green: #7b8e67;
+  --green-dark: #5e714d;
+  --green-nav: #4a5a3d;
+  --white: #f0f0e8;
+  --hp-fill: #6b8e4a;
+  --hp-empty: #1a1d14;
+  --star: #d4c878;
+  --border-width: 3px;
+  --pixel-shadow: 4px 4px 0 var(--dark);
+  --font-pixel: "Press Start 2P", monospace;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-pixel);
+  background: var(--bg-cream);
+  color: var(--dark);
+  -webkit-font-smoothing: none;
+  image-rendering: pixelated;
+  overflow: hidden;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.app-shell {
+  position: relative;
+  max-width: 430px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-cream);
+  overflow: hidden;
+}
+
+.scanlines {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  max-width: 430px;
+  margin: 0 auto;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+}
+
+.app-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 16px 88px;
+  scrollbar-width: none;
+}
+
+.app-content::-webkit-scrollbar {
+  display: none;
+}
+
+.pixel-box {
+  border: var(--border-width) solid var(--dark);
+  box-shadow: var(--pixel-shadow);
+  background: var(--bg-cream);
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 8px;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  color: var(--dark);
+}
+
+.section-label .arrow {
+  color: var(--green-dark);
+  font-size: 10px;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.blink {
+  animation: blink 1.2s step-end infinite;
+}

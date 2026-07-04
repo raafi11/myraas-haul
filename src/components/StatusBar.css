@@ -1,0 +1,54 @@
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 4px 8px;
+  font-size: 7px;
+  letter-spacing: 0.5px;
+}
+
+.status-level {
+  min-width: 48px;
+}
+
+.status-hp {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hp-label {
+  font-size: 7px;
+}
+
+.hp-bar {
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  border: 2px solid var(--dark);
+  background: var(--hp-empty);
+}
+
+.hp-segment {
+  width: 10px;
+  height: 8px;
+  background: #3a3d2f;
+}
+
+.hp-segment.filled {
+  background: var(--hp-fill);
+}
+
+.status-stars {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--star);
+  min-width: 56px;
+  justify-content: flex-end;
+}
+
+.status-stars span {
+  color: var(--dark);
+  font-size: 7px;
+}

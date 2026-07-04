@@ -1,0 +1,31 @@
+.header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.title-box {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+}
+
+.title-box h1 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 6px;
+  letter-spacing: 0.5px;
+  color: var(--dark-muted);
+}
+
+.subtitle svg {
+  color: var(--green);
+}
