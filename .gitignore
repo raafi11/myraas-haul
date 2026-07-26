@@ -24,3 +24,7 @@ Thumbs.db
 coverage/
 
 indxjs.txt
+
+#Keys
+keys/
+myraas-haul-key.pem
